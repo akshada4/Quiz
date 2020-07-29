@@ -1,0 +1,18 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>quiz</title>
+	<link rel="stylesheet" type="text/css" href="{% static './css/quiz_pg.css' %}">
+</head>
+
+<body>
+	<form action='/createquiz/' method="POST"> {% csrf_token %}
+		<button class="button1" type="submit">Create Quiz</button>
+	</form>
+	<form action='/takequiz/' method="POST"> {% csrf_token %}
+		<button class="button2" type="submit">Take Quiz</button>
+	</form>	
+
+</body>
+</html>
