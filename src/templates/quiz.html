@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	{% for i in quiz%}
+	<div>
+		<div>1.	{{i.question}}</div>
+		<br>i.	   {{i.choice_1}}</br>
+		<div>ii.   {{i.choice_2}}</div>
+		<div>iii.  {{i.choice_3}}</div>
+		<div>iv.   {{i.choice_4}}</div>
+	</div>
+	{% endfor %}	
+</body>
+</html>

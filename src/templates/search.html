@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<form method="GET">
+		{{ search_form }}
+		<button type="submit"> Submit </button>
+	</form>
+	{% for i in query%}
+	<div>
+		<a href="/takequiz/?id={{i.id}}"> {{i.title}} {{i.id}} </a>		
+	</div>
+	{% endfor %}	
+</body>
+</html>
